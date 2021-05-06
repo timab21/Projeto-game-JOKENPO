@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    font-family: Impact;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: darkgray;
+}
+.main{
+    width: 1000px;
+    height: 700px;
+    background-color: dimgray;
+    border-radius: 2%;
+    box-shadow: 100px 100px 100px rgba(0,0,0,0.5);
+    display: grid;
+    margin-top: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'labelJogador separador labelPc'
+    'imagemJogador versos imagemPc'
+    'botoes botoes botoes';
+}
+#res{
+    width: 50%;
+    height: 50%;
+    margin: 20% 25%;
+    font-size: 1.8rem;
+    border-radius: 5%;
+    background-color: gold;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    border: double 10px black;
+}
+.jogador{
+    border-radius: 5%;
+    border: ridge 4px black;
+    border: double 10px black;
+    /*border-color: brown;*/
+}
+.pc{
+    border-radius: 5%;
+    border: double 10px black;
+}
+.botoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.botoesFilhos{
+    width: 55%;
+    height: 55%;
+    margin: 20% 25%;
+    font-size: 1.8rem;
+    border-radius: 5%;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+    background-color: gold;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+}
+.botoesFilhos:hover{
+    transition-duration: 0.5s;
+    transition-property: width, height, box-shadow;
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.5);
+    border: solid 5px black;
+}
+.labelPc{
+    grid-area: labelPc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.separador{
+    grid-area: separador;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.labelJogador{
+    grid-area: labelJogador;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.imagemJogador{
+    grid-area: imagemJogador;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.versos{
+    grid-area: versos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+.imagemPc{
+    grid-area: imagemPc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botoes{
+    grid-area: botoes;
+}

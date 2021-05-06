@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pedra Papel Tesoura</title>
+    <link rel="stylesheet" href="../css/principal.css">
+</head>
+<body>
+    <div class="main">
+        <div class="labelJogador">
+           Jogador: 0
+        </div>
+        <div class="separador">
+            <button id="res">Restart</button>
+        </div>
+        <div class="labelPc">
+            PC: 0
+        </div>
+
+    
+        <div class="imagemJogador">
+            <img class="jogador" src="../imgs/player.png" width='300' height='300'>
+        </div>
+
+        <div class="versos">
+            <h1>X</h1>
+        </div>
+
+        <div class="imagemPc">
+            <img class="pc" src="../imgs/pc.png" width='300' height='300'>
+        </div>
+       
+
+        <div class="botoes">
+            <button id="pedra" class="botoesFilhos">Pedra</button>
+            <button id="papel" class="botoesFilhos">Papel</button>
+            <button id="tesoura" class="botoesFilhos">Tesoura</button>
+        </div>
+    </div>
+    <script src="../javascript/principalRefatorado.js"></script>
+</body>
+</html>
